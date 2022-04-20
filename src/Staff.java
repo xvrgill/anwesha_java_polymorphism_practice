@@ -19,6 +19,15 @@ public class Staff {
         System.out.println("vacation days: " + String.valueOf(vdays));
 
     }
+    public void vacationDaysExplicit(int passedCount) {
+
+        for (int count = 0; count < staffList.length; count++) {
+            System.out.println(staffList[count]);
+            int vdays = staffList[count].vacation();
+            System.out.println("vacation days: " + String.valueOf(vdays));
+        }
+
+    }
 
     public void payday() {
         double amount;
